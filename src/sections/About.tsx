@@ -141,7 +141,7 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
   const constraintRef2 = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div className="">
       <div className="container">
       <SectionHeader eyebrow="About me" 
       title="A glimpse into my world" 
@@ -158,7 +158,7 @@ export const AboutSection = () => {
               {hobbies2.map((hobby2) => (
                 <motion.div
                   key={hobby2.title}
-                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-[#FDE2C8] to-[#F7BDAA] rounded-full py-1.5 absolute"
                   style={{
                     left: hobby2.left,
                     top: hobby2.top,
@@ -166,7 +166,7 @@ export const AboutSection = () => {
                   drag
                   dragConstraints={constraintRef2}
                 >
-                  <span className="font-medium text-gray-950">{hobby2.title}</span>
+                  <span className="font-medium text-[#5C4033]">{hobby2.title}</span>
                   <span>{hobby2.emoji}</span>
                 </motion.div>
               ))}
@@ -194,8 +194,7 @@ export const AboutSection = () => {
               {hobbies.map(hobby => (
                 <motion.div key={hobby.title} 
                 className="inline-flex items-center gap-2 px-6 
-                bg-gradient-to-r from-emerald-300
-                 to-sky-400 rounded-full py-1.5 absolute"
+                bg-gradient-to-r from-[#FDE2C8] to-[#F7BDAA] rounded-full py-1.5 absolute "
                  style={{
                   left: hobby.left,
                   top:hobby.top,
@@ -203,7 +202,7 @@ export const AboutSection = () => {
                  drag
                  dragConstraints={constraintRef}
                  >
-                  <span className="font-medium text-gray-950">{hobby.title}</span>
+                  <span className="font-medium text-[#5C4033]">{hobby.title}</span>
                   <span>{hobby.emoji}</span>
 
                 </motion.div>

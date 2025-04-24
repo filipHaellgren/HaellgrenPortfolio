@@ -17,7 +17,8 @@ export const Header = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center sticky z-20 top-3">
+    <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         {navItems.map((item) => (
           <a
@@ -26,8 +27,8 @@ export const Header = () => {
             className={twMerge(
               "nav-item",
               activeSection === item.href.replace("#", "")
-                ? "bg-white text-gray-900"
-                : "text-white/70 hover:bg-white/20 hover:text-white"
+                ? "bg-[#5C4033]  text-[#FFD9A0] "
+                : "text-[#5C4033]  hover:bg-[#5C4033]/50 hover:text-[#FDF6EE]"
             )}
           >
             {item.label}

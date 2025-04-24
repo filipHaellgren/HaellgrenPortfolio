@@ -13,6 +13,7 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "My Portfolio", 
   description: "Created with the help of Frontend Tribe",
+  viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
 };
 
 export default function RootLayout({
@@ -22,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>{children}</body>
+      <body className={twMerge(inter.variable, calistoga.variable, "bg-[#F6EADB] text-white antialiased font-sans")}>{children}</body>
     </html>
   );
 }
+/* 3C7A3A
+3C7B3B */

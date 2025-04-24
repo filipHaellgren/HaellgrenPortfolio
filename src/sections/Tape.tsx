@@ -1,37 +1,13 @@
-import StarIcon from "@/assets/icons/star.svg"
-
-const words = [
-  "performant",
-  "Accessible",
-  "Secure",
-  "Inmteravtive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Maintainable",
-  "Search Optimized",
-  "Usable",
-  "Reliable",
-  
-
-]
+"use client";
+import Wave from "@/assets/icons/wave5.svg";
 
 export const TapeSection = () => {
   return (
-     <div className="py-16 lg:py-24 overflow-x-clip">
-      <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
-        <div className="flex [mask-image:linear-gradient(to_right,transparentblack_10%,black_90%,transparent)]">
-          <div className="flex flex-none gap-4 py-3">
-            {words.map(word => (
-            <div key={word} className="inline-flex gap-4 items-center">
-              <span className="text-gray-900 uppercase font-extrabold text-sm" >{word}</span> 
-              <StarIcon className="size-6 text-gray-900 -rotate-12" /> 
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+<div className="relative w-full aspect-[5/1] overflow-x-hidden -z-[2000]">
+
+  <div className="absolute inset-0 pointer-events-none -z-[2000]">
+    <Wave className="w-full  object-cover" />
   </div>
+</div>
   );
- 
 };
