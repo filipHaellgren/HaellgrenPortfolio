@@ -1,13 +1,12 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg"
 import { SectionHeader } from "@/components/sectionsheader";
-import grainImage from "@/assets/images/grain.jpg"
 import Image from "next/image";
 import { Card } from "@/components/card";
-import { BackgroundBlobs } from "@/components/BackgroundBlobs";
+import Component1 from "@/assets/images/Component1.png"
+import Component2 from "@/assets/images/Component2.png"
 
 
 
@@ -23,21 +22,21 @@ const portfolioProjects = [
       { title: "Peer To Peer Connection" },
     ],
     link: "https://github.com/filipHaellgren/sync-up",
-    image: darkSaasLandingPage,
+    image: Component1,
   },
   {
     company: "Group Project ",
     year: "2024",
-    title: "Xplore",
+    title: "Points Of Intrest Badges App",
     results: [
       { title: "Ai Recognition Via Photos " },
       { title: "Made With Agile Working Methods" },
       { title: "Custom made Badges" },
     ],
     link: "https://github.com/JohanTran02/chas-challenge",
-    image: lightSaasLandingPage,
+    image: Component2,
   },
-  {
+/*   {
     company: "Google Api Project",
     year: "2024",
     title: "FontFlow",
@@ -48,7 +47,7 @@ const portfolioProjects = [
     ],
     link: "https://github.com/filipHaellgren/FontFlow",
     image: aiStartupLandingPage,
-  },
+  }, */
 ];
 
 export const ProjectsSection = () => {
@@ -57,7 +56,7 @@ export const ProjectsSection = () => {
        
       <div className="container ">
       
-        <SectionHeader eyebrow="Some Work That I've Done" title="featured projects" description=" see how i transformed ideas to real applications"/>
+        <SectionHeader eyebrow="Some Work That I've Done" title="featured projects" description="Most Recent"/>
         <div className="flex flex-col mt-10 md:mt-20 gap-20 ">
           {portfolioProjects.map((project, projectIndex)=> (
             <Card 
