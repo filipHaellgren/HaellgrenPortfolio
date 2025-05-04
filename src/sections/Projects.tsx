@@ -14,39 +14,39 @@ import { BackgroundBlobs } from "@/components/BackgroundBlobs";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Work in Progress",
+    year: "2025",
+    title: "Discord Steam Hybrid",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "WebRTC" },
+      { title: "Firebase DataBase" },
+      { title: "Peer To Peer Connection" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://github.com/filipHaellgren/sync-up",
     image: darkSaasLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Group Project ",
+    year: "2024",
+    title: "Xplore",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Ai Recognition Via Photos " },
+      { title: "Made With Agile Working Methods" },
+      { title: "Custom made Badges" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
+    link: "https://github.com/JohanTran02/chas-challenge",
     image: lightSaasLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Google Api Project",
+    year: "2024",
+    title: "FontFlow",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Google Fonts API" },
+      { title: "Abundance of Available Fonts" },
+      { title: "Pagination" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://github.com/filipHaellgren/FontFlow",
     image: aiStartupLandingPage,
   },
 ];
@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
        
       <div className="container ">
       
-        <SectionHeader eyebrow="Real-world results" title="featured projects" description=" see how i transforrmed concepts intop engaging digital experiences"/>
+        <SectionHeader eyebrow="Some Work That I've Done" title="featured projects" description=" see how i transformed ideas to real applications"/>
         <div className="flex flex-col mt-10 md:mt-20 gap-20 ">
           {portfolioProjects.map((project, projectIndex)=> (
             <Card 

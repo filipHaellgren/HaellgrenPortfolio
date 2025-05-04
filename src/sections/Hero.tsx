@@ -10,9 +10,13 @@ export const HeroSection = () => {
 
       {/* Overlay content */}
       <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-        <div className="flex flex-col items-end">
-          <h1 className="text-[#5C4033] font-serif text-9xl font-medium">Filip Haellgren</h1>
-          <p className="text-xl text-[#5C4033] "> (Based In Stockholm) </p>
+        <div className="flex flex-row lt-md:flex-col space-x-6 lt-md:space-x-0">
+          <h1 className="text-[#5C4033] font-serif text-9xl lt-lg:text-8xl font-medium">Filip </h1>
+          <div className="flex flex-col items-end gap-2">
+            <h1 className="text-[#5C4033] font-serif text-9xl lt-lg:text-8xl font-medium"> Haellgren</h1>
+            <p className="text-xl text-[#5C4033] "> (Based In Stockholm) </p>
+          </div>
+          
         </div>
         
       </div>

@@ -25,7 +25,7 @@ export const ContactSection = () => {
                 Let's create something together
               </h2>
               <p className="text-sm mt-2 md:text-base text-[#5C4033]">
-                Let's connect or whatever
+                Let's Connect!
               </p>
             </div>
 
@@ -42,45 +42,41 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          {/* Dropdown Form */}
-          <div
-            ref={contentRef}
-            style={{
-              maxHeight: showForm
-                ? `${contentRef.current?.scrollHeight}px`
-                : '0px',
-              transition: 'max-height 0.7s ease',
-              overflow: 'hidden',
-            }}
-          >
-            <form className="grid gap-4 max-w-xl mx-auto mt-10 text-left">
-              <input
-                type="text"
-                placeholder="Your name"
-                className="bg-white text-gray-800 px-4 py-3 rounded-xl border border-gray-300 placeholder:text-gray-400"
-              />
-              <input
-                type="email"
-                placeholder="Your email"
-                className="bg-white text-gray-800 px-4 py-3 rounded-xl border border-gray-300 placeholder:text-gray-400"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                className="bg-white text-gray-800 px-4 py-3 rounded-xl border border-gray-300 placeholder:text-gray-400"
-              />
-              <textarea
-                placeholder="Your message"
-                rows={5}
-                className="bg-white text-gray-800 px-4 py-3 rounded-xl border border-gray-300 placeholder:text-gray-400"
-              />
-              <button
-                type="submit"
-                className="bg-[#5C4033] text-[#FFD9A0] py-3 rounded-xl font-semibold"
-              >
-                Send
-              </button>
-            </form>
+         {/* Dropdown Form */} 
+          <div 
+          ref={contentRef} 
+          style={{ 
+            maxHeight: showForm 
+              ? `${contentRef.current?.scrollHeight}px` 
+              : '0px', 
+            transition: 'max-height 0.7s ease', 
+            overflow: 'hidden', 
+          }} 
+          > 
+          <div className="grid gap-4 max-w-xl mx-auto mt-10 text-left">
+            <a 
+               href="https://mail.google.com/mail/?view=cm&fs=1&to=filip.g.hallgren@gmail.com&su=Hello&body=Hi%20Filip,"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+            >
+              📧 Send me an email
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/filiphaellgren/" 
+              target="_blank" 
+              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+            >
+              💼 Connect on LinkedIn
+            </a>
+            <a 
+              href="https://github.com/filipHaellgren" 
+              target="_blank" 
+              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+            >
+              💻 View my GitHub
+            </a>
+          </div>
           </div>
         </div>
       </div>

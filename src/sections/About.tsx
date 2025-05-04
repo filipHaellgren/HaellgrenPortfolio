@@ -145,7 +145,7 @@ export const AboutSection = () => {
       <div className="container">
       <SectionHeader eyebrow="About me" 
       title="A glimpse into my world" 
-      description="Learn more about who i am, what i do"
+      description="Hobbies & Technologies"
        />
        <div className="mt-20 flex flex-col gap-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
@@ -175,7 +175,7 @@ export const AboutSection = () => {
 
           <Card className="h-[320px] md:col-span-3 lg:col-span-2">
             <CardHeader title="My toolbox" 
-            description="Excplore the tech and tools i use gao"
+            description="Tools I use"
             className=""
             /> 
             <ToolboxItems items={toolboxItems} className="" itemsWrapperClassName="animate-move-left [animation-duration:30s]" />
@@ -189,7 +189,7 @@ export const AboutSection = () => {
           </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
           <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
-            <CardHeader className="px-6 py-6" title="Beyond the code" description="Explore my intrests"/>
+            <CardHeader className="px-6 py-6" title="Beyond the code" description="Explore my intrests (Move the boxes!)"/>
             <div className="relative flex-1" ref={constraintRef}>
               {hobbies.map(hobby => (
                 <motion.div key={hobby.title} 
@@ -210,7 +210,7 @@ export const AboutSection = () => {
           </div>
           </Card>
 
-         <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
+         <Card className="h-[320px]  relative md:col-span-2 lg:col-span-1">
       {/*         <Image src={mapImage} alt="map image"  className="h-full w-full object-cover object-left-top"/>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full
               bg-gradient-to-r from-emerald-300 to-sky-400 
@@ -218,7 +218,7 @@ export const AboutSection = () => {
               after:rounded-full after:outline-gray-950/30 ">
                 <Image src={smileMemoji} alt="smile emojui" className="size-20"/>
               </div> */}
-              <CardHeader className="px-6 py-6" title="Me" description=""/>
+              <CardHeader className="px-6 py-6" title="Me" description="I started in design and product development, but over the past 4 years, my passion for computers led me toward frontend development where creativity meets code"/>
               
           </Card>
         </div>
