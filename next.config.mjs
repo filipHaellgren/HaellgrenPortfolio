@@ -1,7 +1,9 @@
 console.log('Using static export mode');
 
+export const output = 'export';
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   basePath: '/HaellgrenPortfolio',
   assetPrefix: '/HaellgrenPortfolio/',
 

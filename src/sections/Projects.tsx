@@ -1,7 +1,6 @@
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/sectionsheader";
-import Image from "next/image";
 import { Card } from "@/components/card";
 
 const portfolioProjects = [
@@ -72,14 +71,14 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-[#F6EADB] text-[#5C4033]  h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-8">
+                    <button className="bg-[#F6EADB] text-[#5C4033] h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-8">
                       <span>View on github</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
                 </div>
                 <div className="relative">
-                  <Image
+                  <img
                     src={project.image}
                     alt={project.title}
                     width={800}
