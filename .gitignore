@@ -33,4 +33,4 @@ yarn-error.log*
 
 # DO NOT ignore /out if you're manually deploying its contents
 # Remove or comment this out:
-
+/out/
