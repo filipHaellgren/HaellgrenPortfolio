@@ -12,7 +12,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "My Portfolio", 
-  description: "Created with the help of Frontend Tribe",
+  description: "Filip Haellgren's Portfolio",
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
 };
 
