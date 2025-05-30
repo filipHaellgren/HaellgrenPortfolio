@@ -6,7 +6,9 @@ export const output = 'export';
 const nextConfig = {
   basePath: '/HaellgrenPortfolio',
   assetPrefix: '/HaellgrenPortfolio/',
-
+  images: {
+    unoptimized: true,
+  }, // ✅ Fixed: Closed the images object here
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg')
