@@ -11,20 +11,17 @@ export const ContactSection = () => {
   return (
     <div className="py-16 pt-12 lg:py-24 lg:pt-20">
       <div className="container">
-        <div className="bg-gradient-to-r from-[#FCD9B8] to-[#8B7265]  py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0">
+        <div className="bg-[#5C4033]/80 backdrop-blur-xl border border-white/10 py-8 px-10 rounded-3xl text-center md:text-left relative overflow-hidden z-0">
           {/* Background grain overlay */}
-          <div
-            className="absolute inset-0 opacity-5 -z-10"
-            style={{ backgroundImage: `url(${grainImage.src})` }}
-          />
+       
 
           {/* Content */}
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div>
-              <h2 className="font-serif text-2xl text-[#5C4033] md:text-3xl">
+              <h2 className="font-serif text-2xl text-[#F6EADB] md:text-3xl">
                 Let's create something together
               </h2>
-              <p className="text-sm mt-2 md:text-base text-[#5C4033]">
+              <p className="text-sm mt-2 md:text-base text-[#F6EADB]">
                 Let's Connect!
               </p>
             </div>
@@ -32,7 +29,7 @@ export const ContactSection = () => {
             <div>
               <button
                 onClick={() => setShowForm(!showForm)}
-                className="text-[#FFD9A0] bg-[#5C4033] inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max"
+                className="text-[#F6EADB] bg-[#5C4033] inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max"
               >
                 <span className="font-semibold">
                   {showForm ? 'Close' : 'Contact me'}
@@ -58,23 +55,23 @@ export const ContactSection = () => {
                href="https://mail.google.com/mail/?view=cm&fs=1&to=filip.g.hallgren@gmail.com&su=Hello&body=Hi%20Filip,"
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+              className="text-[#F6EADB] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
             >
-              📧 Send me an email
+              Send me an email
             </a>
             <a 
               href="https://www.linkedin.com/in/filiphaellgren/" 
               target="_blank" 
-              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+              className="text-[#F6EADB] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
             >
-              💼 Connect on LinkedIn
+              Connect on LinkedIn
             </a>
             <a 
               href="https://github.com/filipHaellgren" 
               target="_blank" 
-              className="text-[#FFD9A0] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
+              className="text-[#F6EADB] bg-[#5C4033] px-4 py-3 rounded-xl font-semibold text-center"
             >
-              💻 View my GitHub
+              View my GitHub
             </a>
           </div>
           </div>
