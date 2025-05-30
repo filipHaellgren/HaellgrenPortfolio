@@ -1,3 +1,5 @@
+console.log('Using static export mode');
+
 const nextConfig = {
   output: 'export',
   basePath: '/HaellgrenPortfolio',
