@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/HaellgrenPortfolio',
-  assetPrefix: '/HaellgrenPortfolio/',
+  basePath: '/your-repo-name',
+  assetPrefix: '/your-repo-name/',
 
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
